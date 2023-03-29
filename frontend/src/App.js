@@ -6,10 +6,14 @@ import Register from './Components/Register';
 import { ToastContainer } from 'react-toastify';
 import Appheader from './Components/Appheader';
 import Customer from './Components/Customer';
+import { Box } from '@mui/material';
 
 function App() {
   return (
     <div className="App">
+       <Box width="400px" sx={{ width: { xl: '1488px' } }} m="auto">
+    <Navbar />
+    </Box>
       <ToastContainer theme='colored' position='top-center'></ToastContainer>
       <BrowserRouter>
         <Appheader></Appheader>
