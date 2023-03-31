@@ -15,6 +15,18 @@ trainerRouter.get("/",async (req,res)=>{
     }
 })
 
+trainerRouter.get("/:id",async (req,res)=>{
+    let id=req.params.id
+    try {
+        let trainerData=await TrainerModel.find({_id:id})
+        res.send(trainerData)
+    } catch (error) {
+        console.log("Error While Fetching trainer Data")
+        console.log(error)
+    }
+})
+
+
 trainerRouter.post("/add",async (req,res)=>{
     let payload=req.body
     payload.timeslot=[{
