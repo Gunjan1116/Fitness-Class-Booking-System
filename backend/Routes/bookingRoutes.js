@@ -2,6 +2,8 @@ const express = require("express");
 
 const { Bookingmodel } = require("../models/bookingModel");
 
+const {authenticate} =require("../middlewares/authenticateMiddleware")
+
 const bookingRoutes = express.Router();
 
 bookingRoutes.get("/", async (req, res) => {//getting all booking data
@@ -36,7 +38,7 @@ bookingRoutes.get("/:trainerId", async (req, res) => {//getting paticular traine
     }
 })
 
-bookingRoutes.post("/create", async (req, res) => {//create new booking
+bookingRoutes.post("/create", authenticate,async (req, res) => {//create new booking
     const data = req.body;
     try {
         let allBookings = await Bookingmodel.find({ trainerId: data.trainerId })
