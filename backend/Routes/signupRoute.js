@@ -38,8 +38,8 @@ signupRoute.post("/login",async(req,res)=>{
         if(reqData.length>0){
             bcrypt.compare(password,reqData[0].password,(err,result)=>{
                 if(result){
-                    let normal_token=jwt.sign({userId:reqData[0]._id,name:reqData[0].name},process.env.normalToken,{expiresIn:"2h"});
-                    let refresh_token=jwt.sign({userId:reqData[0]._id,name:reqData[0].name},process.env.refreshToken,{expiresIn:"7d"});
+                    let normal_token=jwt.sign({userId:reqData[0]._id,name:reqData[0].name,email:reqData[0].email},process.env.normalToken,{expiresIn:"1d"});
+                    let refresh_token=jwt.sign({userId:reqData[0]._id,name:reqData[0].name,email:reqData[0].email},process.env.refreshToken,{expiresIn:"7d"});
                     res.json({"msg":"login Successfull","token":normal_token,"refreshToken":refresh_token,"name":reqData[0].name})
                 }else{
                     res.json({"msg":"Wrong Credentials"})
@@ -80,7 +80,7 @@ signupRoute.get("/newtoken",async(req,res)=>{
                 if(err){
                     res.json({"msg":"please login again!!","err":err.message});
                 }else{
-                    const normalToken=jwt.sign({userId:decoded.userId,name:decoded.name},process.env.normalToken,{expiresIn:"2h"});
+                    const normalToken=jwt.sign({userId:decoded.userId,name:decoded.name,email:reqData[0].email},process.env.normalToken,{expiresIn:"1d"});
                     res.json({"msg":"login success","token":normalToken});
                 }
             })

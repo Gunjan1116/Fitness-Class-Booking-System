@@ -3,6 +3,7 @@ const {connection}=require("./config/db")
 const { trainerRouter } = require("./Routes/trainer.route")
 const {bookingRoutes}=require("./Routes/bookingRoutes")
 const {signupRoute}=require("./Routes/signupRoute")
+
 require("dotenv").config()
 
 const app=express()
