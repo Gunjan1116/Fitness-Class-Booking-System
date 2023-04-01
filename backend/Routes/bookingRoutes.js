@@ -2,9 +2,10 @@ const express = require("express");
 
 const { Bookingmodel } = require("../models/bookingModel");
 
-const {authenticate} =require("../middlewares/authenticateMiddleware")
+const { authenticate } = require("../middlewares/authenticateMiddleware")
 
 const bookingRoutes = express.Router();
+const nodemailer = require("nodemailer")
 
 bookingRoutes.get("/", async (req, res) => {//getting all booking data
     try {
@@ -38,14 +39,13 @@ bookingRoutes.get("/:trainerId", async (req, res) => {//getting paticular traine
     }
 })
 
-bookingRoutes.post("/create", authenticate,async (req, res) => {//create new booking
+bookingRoutes.post("/create", authenticate, async (req, res) => {//create new booking
     const data = req.body;
     try {
         let allBookings = await Bookingmodel.find({ trainerId: data.trainerId })
         if (allBookings.length === 0) {
             const addData = new Bookingmodel(data);
             await addData.save();
-            res.json({ msg: "new booking created successfully" })
         } else {
             for (let i = 0; i < allBookings.length; i++) {
                 if (allBookings[i].bookingDate === data.bookingDate) {
@@ -57,9 +57,29 @@ bookingRoutes.post("/create", authenticate,async (req, res) => {//create new boo
             }
             const addData = new Bookingmodel(data);
             await addData.save();
-            res.json({ msg: "new booking created successfully" })
-            return
         }
+        const transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                user: 'ajitkhatua286@gmail.com',
+                pass: 'ezfgqbrkxpmcjkqr'
+            }
+        });
+        const mailOptions = {
+            from: 'ajitkhatua286@gmail.com',
+            to: `${data.userEmail}`,
+            subject: 'Booking Confirmation from Rapid fit',
+            text: `Your Booking is confirmed on ${data.bookingDate} date at ${data.bookingSlot} slot.`
+        };
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                console.log(error);
+                return res.status(500).json({ message: 'Error while sending conformation mail' });
+            } else {
+                // res.json({ msg: "new booking created successfully" })
+                return res.status(200).json({ message: 'Confiramtion sent to email', msg: "new booking created successfully" });
+            }
+        });
 
     } catch (error) {
         console.log("error from adding new booking data", error.message);

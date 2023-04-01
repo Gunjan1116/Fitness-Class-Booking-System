@@ -6,6 +6,7 @@ const trainerSchema=mongoose.Schema({
     age:Number,
     gender:String,
     image:String,
+    price:Number,
     specialization:Array,
     timeslot:Array(Object)
 })
