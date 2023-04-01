@@ -55,7 +55,7 @@ trainerRouter.post("/add",async (req,res)=>{
       ]
     try {
         let trainer= await TrainerModel.insertMany(payload)
-        res.send("Trainer Added")
+        res.json({"msg":"Trainer Added"})
         
     } catch (error) {
         console.log("Error while Adding a trainer")
@@ -105,7 +105,7 @@ trainerRouter.delete("/delete/:id",async (req,res)=>{
     let id=req.params.id
     try {
         let deleteTrainer=await TrainerModel.findByIdAndDelete({_id:id})
-        res.send("Trainer Data Deleted")
+        res.json({"msg":"Trainer Data Deleted"})
         
     } catch (error) {
         console.log(error)
