@@ -201,3 +201,56 @@ body {
 .credit span {
     color: #9CD02F;
 }
+
+
+/* Input part css start */
+.input-part{
+    color: white;
+    margin-top: 10%;
+}
+#main_body{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(1,1fr);
+    gap:20px;
+    text-align: center;
+    
+}
+#inputdate{
+    padding: 10px 60px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+#slot-select{
+    padding: 10px 0px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+#book_appointment{
+    padding: 10px 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #9CD02F;
+    color: #fff;
+}
+#book_appointment:hover{
+    background-color: #000;
+    color: #9CD02F;
+    border: 1px solid #9CD02F;
+    cursor: pointer;
+}
+#navbar{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#all_appointment{
+    font-size: 15px;
+    color: #aaa;
+    
+}
+#all_appointment:hover{
+    color: #9CD02F;
+    cursor: pointer;
+}
+/* Input part css end */
