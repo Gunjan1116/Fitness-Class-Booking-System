@@ -1,4 +1,5 @@
 const express=require("express")
+const cors=require("cors");
 const {connection}=require("./config/db")
 const { trainerRouter } = require("./Routes/trainer.route")
 const {bookingRoutes}=require("./Routes/bookingRoutes")
@@ -7,6 +8,9 @@ const {signupRoute}=require("./Routes/signupRoute")
 require("dotenv").config()
 
 const app=express()
+app.use(cors({
+    origin:"*"
+}))
 app.use(express.json())
 
 app.use("/user",signupRoute)
