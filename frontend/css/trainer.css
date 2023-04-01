@@ -113,11 +113,137 @@ body {
 
 .header a {
     display: inline-block;
-    padding: 1.5rem 45rem;
+    padding: 1.5rem 50rem;
     font-size: 1.7rem;
     color: #fff;
 }
 
+.trainers {
+    margin-top: 10rem;
+}
+
+.trainers .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    gap: 1.5rem;
+}
+
+.trainers .box-container .box {
+    height: 40rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.trainers .box-container .box:hover .content {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.trainers .box-container .box img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.trainers .box-container .box .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    padding: 2rem;
+    -webkit-transform: translateY(6.5rem);
+    transform: translateY(6.5rem);
+}
+
+.trainers .box-container .box .content span {
+    font-size: 1.5rem;
+    color: #9CD02F;
+}
+
+.trainers .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding-top: .5rem;
+}
+
+.trainers .box-container .box .content .share {
+    padding-top: 2rem;
+    margin-top: 1.5rem;
+    border-top: 0.1rem solid #aaa;
+}
+
+.trainers .box-container .box .content .share a {
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 1.5rem;
+}
+
+.trainers .box-container .box .content .share a:hover {
+    color: #9CD02F;
+}
+
+
+.appointment .slide {
+    background: #111;
+    margin-bottom: 7rem;
+}
+
+.appointment .slide:hover .image img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.appointment .slide .image {
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.appointment .slide .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.appointment .slide .content {
+    padding: 2rem;
+}
+
+.appointment .slide .content .link {
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.appointment .slide .content .link a {
+    color: #9CD02F;
+}
+
+.appointment .slide .content .link a:hover {
+    color: #fff;
+}
+
+.appointment .slide .content .link span {
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.appointment .slide .content h3 {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.appointment .slide .content p {
+    font-size: 1.5rem;
+    color: #aaa;
+    line-height: 2;
+    padding: 1rem 0;
+}
 
 .footer {
     margin-top: 10rem;
