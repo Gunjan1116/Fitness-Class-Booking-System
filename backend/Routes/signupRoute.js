@@ -10,23 +10,29 @@ const signupRoute=express.Router();
 
 //registering new user
 signupRoute.post("/signup",async(req,res)=>{
-    const {name,email,mobileNo,password}=req.body;
-
-    try {
-        bcrypt.hash(password,5,async(err,hash)=>{
-            if(err){
-                console.log("error from hashing the password in signup",err.message);
-                res.json({msg:"Something went wrong!"})
-            }else{
-                const data=new Signupmodel({name,email,mobileNo,password:hash});
-                await data.save();
-                res.json({msg:"Signup Successfully"})
-            }
-        })
-    } catch (error) {
-        console.log("error from signup route",error.message);
-        res.json({err:error.message});
+    const {name,email,password}=req.body;
+    let allData=await Signupmodel.find({email});
+    //console.log(allData);
+     if(allData.length==0){
+        try {
+            bcrypt.hash(password,5,async(err,hash)=>{
+                if(err){
+                    console.log("error from hashing the password in signup",err.message);
+                    res.json({msg:"Something went wrong!"})
+                }else{
+                    const data=new Signupmodel({name,email,password:hash});
+                    await data.save();
+                    res.json({msg:"Signup Successfully"})
+                }
+            })
+        } catch (error) {
+            console.log("error from signup route",error.message);
+            res.json({err:error.message});
+        }
+    }else if(allData[0].email==email){
+        return res.json({msg:"You are already registerd!"})
     }
+    
 })
 
 //login the user
