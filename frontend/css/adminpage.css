@@ -1,0 +1,86 @@
+body{
+    background-color: #000;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    font-weight: bolder;
+  color: #fff;
+  font-size: 1.7rem;
+  text-decoration: none;
+  text-align: center;
+}
+.navbar #child1{
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 20%;
+}
+.logo span {
+    color: #9CD02F;
+  }
+.navbar{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    color: white;
+    background-color: #111;
+    position: fixed;
+    top: 0;
+}
+
+.navbar #child2{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    cursor: pointer;
+    font-size: 19px;
+}
+#body{
+  margin-top: 7%;
+}
+
+#trainer{
+    display: block;
+}
+#user{
+    display: none;
+}
+#bookings{
+    display: none;
+}
+#trainer .child{
+    display: flex;
+    height: 230px;
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 20px;
+    background-color: #111;
+}
+.image{
+    height:200px ;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.desc{
+    margin-left: 13%;
+    width: 40%;
+}
+#delete{
+    margin-left: 100px;
+    margin-top: 7%;
+}
+#delete button{
+    height: 40px;
+    width: 130px;
+    background-color: #9CD02F;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 7px;
+}
