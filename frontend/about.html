@@ -5,14 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="css/about.css"> -->
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    
 
     <title>Document</title>
+    <style>
+        .mid-image-about {
+            width: 40%;
+            display: flex;
+        }
+
+        /* 2nd mid-section */
+        .second-mid-head {
+            text-align: center;
+
+            color: greenyellow;
+            font-size: 60px;
+        }
+        .second-mid-images{
+             display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            /* border: 1px solid white; */
+            margin-top: 2%;
+            width: 95%;
+            margin-left: 2%;
+   
+   
+        }
+        .second-mid-img-section img{
+            width: 50%;
+        }
+        h3{
+            color: greenyellow;
+            font-size: 35px;
+        }
+        p{
+            color: white;
+            font-size: 20px;
+            /* font-style: italic; */
+        }
+        /* about us */
+        .about-image{
+            width: 40%;
+            margin-left: 2%;
+            margin-top: 3%;
+        }
+        .about-right{
+            float: right;
+        }
+
+
+
+
+        /* @media (max-width: 450px) {
+            .mid-image-about {
+    width: 100%;
+  }
+} */
+    </style>
 </head>
 
 <body>
@@ -20,8 +77,108 @@
 
         <a href="#" class="logo"> <span>RAPID</span>FIT </a>
 
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#features">features</a>
+            <a href="#pricing">pricing</a>
+            <a href="./trainer.html">trainers</a>
+            <a href="./Login.html">Register Now</a>
+        </nav>
+
     </header>
-    <section class="footer">
+
+    <!-- ------------------------------------MID-SECTION ---------------------------------------------------- ---->
+    <div class="mid-image">
+        <div>
+            <img class="mid-image-about" src="./images/fitness.png" alt="mid-image">
+        </div>
+        <div>
+            <h1 class=head-about>.....</h1>
+        </div>
+    </div>
+
+    <!-- ------------------------------------2nd mid-section----------------------------------------------- -->
+
+    <div id="second-mid">
+        <h1 class=second-mid-head> Why Choose Us ?</h1>
+        <div class="second-mid-images">
+
+            <!-- 1 -->
+
+            <div class="second-mid-img-section">
+                <img src="https://fitpalacegym.com/wp-content/uploads/2023/03/Website-Elements-3.png"
+                    alt="modern-equipment">
+                <h3>Modern Equipment</h3>
+                <p>Experience a the workout <br>with our modern  equipment, <br>from advanced cardio machines <br>to targeted
+                    strength-training<br> gear</p>
+            </div>
+
+                <!-- 2 -->
+
+                <div class="second-mid-img-section">
+                    <img src="https://fitpalacegym.com/wp-content/uploads/2023/03/Website-Elements-2.png"
+                        alt="diet-plan">
+                    <h3>Diet Plans</h3>
+                    <p>Transform your body with  <br>Fit Palace Gym's personalized<br> diet plans, tailored to your<br> unique
+                        fitness goals.</p>
+                </div>
+
+                    <!-- 3 -->
+
+                    <div class="second-mid-img-section">
+                        <img src="https://fitpalacegym.com/wp-content/uploads/2023/03/Website-Elements-1.png"
+                            alt="Professional Training">
+                        <h3>Professional Training</h3>
+                        <p>Get expert guidance and achieve  <br>
+                            your goals with Fit Palace Gym's professional trainers.</p>
+                    </div>
+
+                        <!-- 4 -->
+
+                        <div class="second-mid-img-section">
+                            <img src="https://fitpalacegym.com/wp-content/uploads/2023/03/Website-Elements.png"
+                                alt="Variety of Classes">
+                            <h3>Variety of Classes</h3>
+                            <p>Unleash your potential with our <br> variety of classes, from stepper to Zumba, dance fitness
+                                and personal training.</p>
+                        </div>
+
+
+
+                       
+
+                </div>
+            </div>
+
+            <!-- About us -->
+            <div id="about-us">
+                
+                    
+                        <img class ="about-image" src="https://fitpalacegym.com/wp-content/uploads/elementor/thumbs/4-q35s2u0b2nn4wd5t2rqdzjotbrqfug9fi9c81g2fww.jpg" alt="zym">
+                    
+               
+                
+                    <h3 style = "text-align: center;font-size: 15px;">About Us</h3>
+
+                
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- <section class="footer">
 
         <div class="box-container">
 
@@ -70,8 +227,10 @@
 
         </div>
 
-    </section>
+    </section> -->
 
 </body>
 
 </html>
+
+<script src="./script/index.js"></script>
