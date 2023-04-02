@@ -1,5 +1,5 @@
 
-let baseurl="http://localhost:3000"
+let baseurl="https://good-tan-jay.cyclic.app/"
 
 
 let navtrainer=document.getElementById("navTrainer")
