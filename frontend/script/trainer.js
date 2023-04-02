@@ -1,28 +1,25 @@
-let url="http://localhost:3000"
+let url = "http://localhost:3000"
 
-let boxContainer=document.querySelector("#trainers .box-container")
+let boxContainer = document.querySelector("#trainers .box-container")
 
+async function getTrainerData() {
+  try {
+    let res = await fetch(`${url}/trainer`)
+    let data = await res.json()
+    displayTrainerData(data)
 
-
-
-async function getTrainerData(){
-    try {
-      let res= await fetch(`${url}/trainer`)
-      let data =await res.json()
-      displayTrainerData(data)
-      
-    } catch (error) {
-        console.log(error)
-    }
+  } catch (error) {
+    console.log(error)
   }
-  getTrainerData()
-  
-  function  displayTrainerData(data){
-    boxContainer.innerHTML=""
-    boxContainer.innerHTML=`
+}
+getTrainerData()
+
+function displayTrainerData(data) {
+  boxContainer.innerHTML = ""
+  boxContainer.innerHTML = `
      
-      ${ data.map((elem)=>{
-        return `
+      ${data.map((elem) => {
+    return `
         <div class="box">
             <img src=${elem.image} alt="">
             <div class="content">
@@ -38,15 +35,15 @@ async function getTrainerData(){
             </div>
        </div>
           `
-      }).join("")}`
+  }).join("")}`
 
-      let appointmentBtns=document.querySelectorAll(".btn")
-     
-      for(let appointmentBtn of appointmentBtns){
-           appointmentBtn.addEventListener("click",(e)=>{
-                let id=e.target.dataset.id
-                sessionStorage.setItem("trainerId",id)
-           })
-      }
+  let appointmentBtns = document.querySelectorAll(".btn")
 
+  for (let appointmentBtn of appointmentBtns) {
+    appointmentBtn.addEventListener("click", (e) => {
+      let id = e.target.dataset.id
+      sessionStorage.setItem("trainerId", id)
+    })
   }
+
+}

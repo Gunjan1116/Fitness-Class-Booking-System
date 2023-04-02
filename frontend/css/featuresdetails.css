@@ -40,7 +40,7 @@ body {
 
 .heading {
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
     position: relative;
 }
 
@@ -113,74 +113,9 @@ body {
 
 .header a {
     display: inline-block;
-    padding: 1.5rem 50rem;
+    padding: 1.5rem 45rem;
     font-size: 1.7rem;
     color: #fff;
-}
-
-.trainers {
-    margin-top: 10rem;
-    padding: 0 2rem;
-}
-
-.trainers .box-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
-    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
-    gap: 1.5rem;
-}
-
-.trainers .box-container .box {
-    height: 40rem;
-    position: relative;
-    margin-bottom: 7rem;
-
-}
-
-.trainers .box-container .box img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-
-.trainers .box-container .box .content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #111;
-    padding: 2rem;
-    -webkit-transform: translateY(6.5rem);
-    transform: translateY(6.5rem);
-}
-
-.trainers .box-container .box .content span {
-    font-size: 1.5rem;
-    color: #9CD02F;
-}
-
-.trainers .box-container .box .content h3 {
-    font-size: 2rem;
-    color: #fff;
-    padding-top: .5rem;
-}
-
-.trainers .box-container .box .content .share {
-    padding-top: 2rem;
-    margin-top: 1.5rem;
-    border-top: 0.1rem solid #aaa;
-}
-
-.trainers .box-container .box .content .share a {
-    font-size: 2rem;
-    color: #fff;
-    margin-right: 1.5rem;
-}
-
-.trainers .box-container .box .content .share a:hover {
-    color: #9CD02F;
 }
 
 .footer {
@@ -266,3 +201,84 @@ body {
 .credit span {
     color: #9CD02F;
 }
+
+
+/* Input part css start */
+.input-part {
+    color: white;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#main_body {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    text-align: center;
+
+}
+
+#inputdate {
+    padding: 10px 60px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+#slot-select {
+    padding: 10px 0px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+#book_appointment {
+    padding: 10px 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #9CD02F;
+    color: #fff;
+}
+
+#book_appointment:hover {
+    background-color: #000;
+    color: #9CD02F;
+    border: 1px solid #9CD02F;
+    cursor: pointer;
+}
+
+#navbar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#all_appointment {
+    font-size: 15px;
+    color: #aaa;
+
+}
+
+#all_appointment:hover {
+    color: #9CD02F;
+    cursor: pointer;
+}
+
+#main_cont {
+    text-align: center;
+    width: 90%;
+    padding-left: 300px;
+}
+
+.inner_cont {
+    display: flex;
+    gap: 2rem;
+}
+
+.inner_cont p {
+    width: 500px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Input part css end */
