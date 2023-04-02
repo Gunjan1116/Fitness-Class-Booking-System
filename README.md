@@ -1,1 +1,61 @@
-# earsplitting-growth-3609
+## Project
+>> Earsplitting-growth-3609
+
+<br>
+
+## Project Name
+>> Rapit-Fit
+
+# Collaborative Project
+ >>Contributors
+  - Gunjan Kumar
+  - Ajit Singh
+  - Ayushi Soni
+  - Vishal Singh
+   
+
+<br>
+
+# DEPLOYED LINK
+    - "https://chipper-zabaione-4ba9e5.netlify.app/"
+
+    - API Endpoints
+   
+   <br>
+
+ # REQUIREMENTS 
+  - User can login and sign up 
+  - User can visit severals sections
+  - User can able to get all the information
+  - User can book trainers
+  - User can book other services
+  - User can book the appointment slot 
+  - User can pay for the services
+  - User can give feedback on appointment
+  - User can choose time according to their needs for slot booking
+  - User can cancel the appointment
+  - Feedback
+
+
+  ## TECH STACKS
+    # Frontend
+    > HTML
+    >CSS
+    >JAVASCRIPT
+    >BOOTSTRAP
+    >SWIPERJS
+    >CAROUSEL
+    >JQUERY
+
+    # Backend
+    >NODEJS
+    >EXPRESSJS
+    
+    ## Database
+    >MONGODB
+
+    <br>
+
+    
+
+
