@@ -45,8 +45,8 @@
 
 
   ## TECH STACKS
-    # Frontend
-    > HTML
+   # Frontend
+    >HTML
     >CSS
     >JAVASCRIPT
     >BOOTSTRAP
@@ -54,14 +54,14 @@
     >CAROUSEL
     >JQUERY
 
-    # Backend
+   # Backend
     >NODEJS
     >EXPRESSJS
     
-    ## Database
+   # Database
     >MONGODB
 
-     ## Register
+   ## Register
 
     - "localhost:8080/signup"
 
@@ -70,7 +70,7 @@
     - Email
     - Password
 
-    ## Login
+   ## Login
 
      - "localhost:8080/login"
 
