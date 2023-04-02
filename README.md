@@ -23,8 +23,12 @@
     - "https://chipper-zabaione-4ba9e5.netlify.app/"
 
     - API Endpoints
-   
+   ![WhatsApp Image 2023-04-02 at 10 40 36 PM](https://user-images.githubusercontent.com/112810259/229368310-4371aa39-b0dc-4d7c-8542-65b780611528.jpeg)
+
    <br>
+ # BluePrint
+ 
+
 
  # REQUIREMENTS 
   - User can login and sign up 
