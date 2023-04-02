@@ -38,7 +38,7 @@
 
 
   ## TECH STACKS
-    # Frontend
+     # Frontend
     > HTML
     >CSS
     >JAVASCRIPT
@@ -54,7 +54,7 @@
     ## Database
     >MONGODB
 
-    ## Register
+##### Register
 
     - "localhost:8080/signup"
 
@@ -70,7 +70,7 @@
      - Email
      - Password
 
-     
+
 
     
 
