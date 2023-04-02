@@ -30,14 +30,18 @@
         }
         .second-mid-images{
              display: grid;
+            width: 80%;
+            margin: 10px auto;
             grid-template-columns: repeat(4,1fr);
             grid-template-rows: auto;
+            gap: 20px;
             /* border: 1px solid white; */
-            margin-top: 2%;
-            width: 95%;
-            margin-left: 2%;
    
    
+        }
+        .second-mid-img-section {
+            width: 100%;
+            
         }
         .second-mid-img-section img{
             width: 50%;
@@ -51,16 +55,51 @@
             font-size: 20px;
             /* font-style: italic; */
         }
+        #about-us{
+            display: grid;
+            width: 80%;
+            margin: auto;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+
+
+        }
         /* about us */
         .about-image{
-            width: 40%;
-            margin-left: 2%;
-            margin-top: 3%;
+            width: 60%;
+            margin: 3% auto auto 5%;
         }
-        .about-right{
-            float: right;
+        .our-team-image{
+            margin-top: 3%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap: 0;
+        }
+        .our-team-image img{
+            width: 90%;
+        }
+        .book-appointment-button{
+            margin: 2% ;
+            text-align: center;
+        }
+        .appointment{
+            background-color: olivedrab;
+            padding: 15px;
+            border-radius: 15%;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            border: 2px solid white;
+        }
+        .appointment:hover{
+            transform: scale(1.2);
+            z-index: 1;
+           cursor: pointer;
         }
 
+
+        
 
 
 
@@ -90,17 +129,17 @@
 
     </header>
 
-    <!-- ------------------------------------MID-SECTION ---------------------------------------------------- ---->
+    <!-- -------------------------------------------------------------------------MID-SECTION --------------------------------------------------->
     <div class="mid-image">
         <div>
-            <img class="mid-image-about" src="./images/fitness.png" alt="mid-image">
+            <img style="width: 25%;" class="mid-image-about" src="./images/fitness.png" alt="mid-image">
         </div>
         <div>
             <h1 class=head-about>.....</h1>
         </div>
     </div>
 
-    <!-- ------------------------------------2nd mid-section----------------------------------------------- -->
+    <!-- -----------------------------------------------------------------------2nd mid-section----------------------------------------------- -->
 
     <div id="second-mid">
         <h1 class=second-mid-head> Why Choose Us ?</h1>
@@ -153,17 +192,77 @@
                 </div>
             </div>
 
-            <!-- About us -->
+            <!----------------------------------------------------------------------- About us ----------------------------------------------------------------------->
             <div id="about-us">
+                <div class="about-us-img">
+                    <img class ="about-image" src="https://fitpalacegym.com/wp-content/uploads/elementor/thumbs/4-q35s2u0b2nn4wd5t2rqdzjotbrqfug9fi9c81g2fww.jpg" alt="zym">
+
+                </div>
+                
                 
                     
-                        <img class ="about-image" src="https://fitpalacegym.com/wp-content/uploads/elementor/thumbs/4-q35s2u0b2nn4wd5t2rqdzjotbrqfug9fi9c81g2fww.jpg" alt="zym">
                     
                
+                <div class = "about-heading">
+                    <h3 >About Us</h3>
+                    
+                    <br>
+                    <h4 style="color:white;font-size: 20px;">Making fitness fun and accessible for all</h4> <br>
+                    <p style="font-size: 20px">We believe in providing a welcoming, supportive and non-judgmental atmosphere that inspires our members to achieve their fitness goals. We offer a wide variety of state-of-the-art equipment and facilities, along with personalized training plans from our experienced trainers. At our gym, we aim to empower and elevate our members’ fitness experiences, helping them lead healthier, happier lives.</p>
+                    <br>
+                    <ul style="color:white;font-size: 18px;margin-left: 15px;">
+                        <li>State of the art facilities</li>
+                        <li>Supportive Environment</li>
+                        <li>Like-minded individuals</li>
+                        <li>Great fitness experience</li>
+                    </ul>
+                </div>
                 
-                    <h3 style = "text-align: center;font-size: 15px;">About Us</h3>
+            </div>
+            <br>
+
+            <!---------------------------------------------------------------------- Our Team ------------------------------------------------------->
+
+            <div style = "margin: 5% 5% 5% 5%"id="our-team-section">
+                <div class="our-team-head">
+                    <h4 style="color: greenyellow;font-size: 25px;">Our Team</h4><br>
+                    <h1  style="color:white;font-size: 40px;text-align: center;">Your fitness journey, customized by our trainers.</h1>
+                </div>
+
+                <div class="our-team-image">
+                    <div class="team-image">
+                        <img src="https://fitpalacegym.com/wp-content/uploads/2023/03/confident-sportsman-with-headphones-jumping-rope-768x1151.jpg" alt="">
+                    </div>
+                    <div class="team-image">
+                        <img src="https://fitpalacegym.com/wp-content/uploads/2023/03/confident-guy-scaled.jpg" alt="">
+                    </div>
+                    <div class="team-image">
+                        <img src="https://fitpalacegym.com/wp-content/uploads/2023/03/confident-sportsman-with-headphones-jumping-rope-scaled.jpg" alt="">
+                    </div>
+                </div>
+
+
+                <div class ="book-appointment-button">
+                    <button class="appointment"> Book an appointment
+
+                    </button>
+
+                </div>
+
 
                 
+            </div>
+
+            <!-- Test -->
+            <div id="test">
+                <div style="text-align: center;" class="test-head">
+                    <h1 style="color: greenyellow;font-size: 25px;">Testimonials</h1>
+                    <br>
+                    <p  style="font-size: 30px;">Don't just take our word for it - read what our clients have to say!</p>
+                </div>
+            </div>
+            <div class="slider">
+                <!-- slider for review  --> 
             </div>
 
 
@@ -177,8 +276,7 @@
 
 
 
-
-                <!-- <section class="footer">
+                <section class="footer">
 
         <div class="box-container">
 
@@ -227,7 +325,7 @@
 
         </div>
 
-    </section> -->
+    </section>
 
 </body>
 
