@@ -19,12 +19,14 @@ navuser.addEventListener("click",()=>{
     trainerPage.style.display="none"
     userPage.style.display="block"
     bookingPage.style.display="none"
+    getUserData()
 })
 
 navbooking.addEventListener("click",()=>{
     trainerPage.style.display="none"
     userPage.style.display="none"
     bookingPage.style.display="block"
+    getAllBookigData()
 })
 
 
@@ -64,6 +66,7 @@ function  displayTrainerData(data){
         `
     }).join("")}
     <div id="add"> 
+    <button id="cross">&#215;</button>
       <h2>Enter All details for adding a Trainer</h2>
       <form action="" id="trainer-added">
         <input type="text" id="name" placeholder="Enter Trainer Name" required>
@@ -95,6 +98,10 @@ function  displayTrainerData(data){
          
       })
     }
+
+    document.getElementById("cross").addEventListener("click",()=>{
+      document.getElementById("add").style.display="none"
+    })
 
     let addTrainerBtn=document.getElementById("add-trainer")
 
@@ -151,4 +158,92 @@ async function  deleteTrainerData(id){
  } catch (error) {
   console.log("Error While deleting Trainer")
  }
+}
+
+async function getUserData(){
+  try {
+    let res= await fetch(`${baseurl}/user/alluser`)
+    let data=await res.json()
+    displayUserData(data)
+    
+  } catch (error) {
+     console.log("Error while fetching user data")
+     console.log(error)
+  }
+}
+
+
+function displayUserData(data){
+     userPage.innerHTML=""
+     userPage.innerHTML=`
+     <h1>All Users</h1>
+     <table>
+         <thead>
+             <tr>
+                 <th>Id</th>
+                 <th>Name</th>
+                 <th>Email</th>
+                 <th>Password</th>
+             </tr>
+         </thead>
+         <tbody>
+         ${data.map((elem)=>{
+          return `
+              <tr>
+                  <td>${elem._id}</td>
+                  <td>${elem.name}</td>
+                  <td>${elem.email}</td>
+                  <td>*******</td>
+              </tr>
+          `
+         }).join("")}
+             
+         </tbody>
+     </table>
+     `
+}
+
+async function getAllBookigData(){
+  try {
+    let res= await fetch(`${baseurl}/booking`)
+    let data=await res.json()
+    displayBookingData(data.bookingData)
+
+  } catch (error) {
+     console.log("Error while fetching user data")
+     console.log(error)
+  }
+}
+
+
+function displayBookingData(data){
+   bookingPage.innerHTML=""
+   bookingPage.innerHTML=`
+   <h1 style="text-align: center;">All Bookings</h1>
+   <table>
+       <thead>
+           <tr>
+               <th>Trainer Id</th>
+               <th>User Id</th>
+               <th>Email</th>
+               <th>Date</th>
+               <th>Time Slot</th>
+           </tr>
+       </thead>
+       <tbody>
+       ${data.map((elem)=>{
+        return `
+            <tr>
+                <td>${elem.trainerId}</td>
+                <td>${elem.userId}</td>
+                <td>${elem.userEmail}</td>
+                <td>${elem.bookingDate}</td>
+                <td>${elem.bookingSlot}</td>
+            </tr>
+        `
+       }).join("")}
+           
+       </tbody>
+   </table>
+   `
 }

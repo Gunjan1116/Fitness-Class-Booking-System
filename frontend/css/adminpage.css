@@ -37,7 +37,13 @@ body{
     cursor: pointer;
     font-size: 19px;
 }
-
+#cross{
+    margin-left: 94.5%;
+    font-size: 30px;
+    background-color: #111;
+    border: none;
+    color: #9CD02F;
+}
 .navbar #child2 h4:hover{
      color: #9CD02F;
 }
@@ -140,4 +146,22 @@ button:hover{
     font-size: 18px;
     border: none;
     border-radius: 7px;
+}
+
+table{
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    height: 30px;
+  }
+tr:nth-child(even) {
+   background-color: #333;
+}  
+#user h1{
+    text-align: center;
 }
