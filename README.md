@@ -1,5 +1,7 @@
 ## Project
 >> Earsplitting-growth-3609
+>> ![rapid-fit](https://user-images.githubusercontent.com/112810259/229367310-98d1ee3e-8392-46db-83c7-c5ff2b182d78.png)
+
 
 <br>
 
@@ -58,5 +60,4 @@
 
     
 
-![rapid-fit](https://user-images.githubusercontent.com/112810259/229367310-98d1ee3e-8392-46db-83c7-c5ff2b182d78.png)
 
