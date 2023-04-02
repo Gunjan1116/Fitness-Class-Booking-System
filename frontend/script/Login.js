@@ -70,13 +70,17 @@ loginBtn.addEventListener("click",(e)=>{
     let password=document.querySelector(".login-wrap form #password").value;
     if(email==""||password==""){
         return alert("Please fill all the details!")
+    }else if(email=="admin@gmail.com"&&password=="admin"){
+        window.location.href="./adminpage.html";
+    }else{
+        let obj={
+            email,
+            password
+        }
+        //console.log(obj);
+        loginUser(obj);
     }
-    let obj={
-        email,
-        password
-    }
-    //console.log(obj);
-    loginUser(obj);
+    
 })
 
 async function loginUser(obj){
