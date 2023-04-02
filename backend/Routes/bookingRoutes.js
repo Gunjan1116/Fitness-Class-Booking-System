@@ -17,8 +17,8 @@ bookingRoutes.get("/", async (req, res) => {//getting all booking data
     }
 })
 
-bookingRoutes.get("/:userId", async (req, res) => {//getting paticular user booking data
-    let userId = req.params.userId;
+bookingRoutes.get("/userId", authenticate,async (req, res) => {//getting paticular user booking data
+    let userId = req.body.userId;
     try {
         const reqData = await Bookingmodel.find({ userId });
         res.json({ msg: `All booking data of userId ${userId}`, Data: reqData })
@@ -99,9 +99,9 @@ bookingRoutes.patch("/edit/:id", async (req, res) => {//edit the booking data
     }
 })
 
-bookingRoutes.patch("/remove/:id", async (req, res) => {//removing the booking data
+bookingRoutes.delete("/remove/:id", authenticate,async (req, res) => {//removing the booking data
     const ID = req.params.id
-
+    //console.log(ID);
     try {
         await Bookingmodel.findByIdAndDelete({ _id: ID });
         res.json({ msg: `booking id of ${ID} is deleted succesfully` })

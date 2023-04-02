@@ -201,3 +201,39 @@ body {
 .credit span {
     color: #9CD02F;
 }
+/* All css of data from backend */
+.all_appointment{
+    color: white;
+    margin-top: 10%;
+    font-size: 15px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+  }
+  td, th {
+      border: 1px solid #9CD02F;
+      text-align: center;
+      padding: 8px;
+      height: 30px;
+    }
+  tr:nth-child(even) {
+     background-color: #333;
+  }  
+ 
+
+  .cancel_appointment{
+    border-radius: 10px;
+    background-color: #9CD02F;
+    padding: 10px 20px;
+    color: white;
+    font-size: 15px;
+  }
+  .cancel_appointment:hover{
+    background-color: #000;
+    color: #9CD02F;
+    border: 1px solid #9CD02F;
+    cursor: pointer;
+  }
