@@ -94,8 +94,17 @@ signupRoute.get("/newtoken",async(req,res)=>{
     } catch (error) {
         console.log("error from getting new token route",error.message);
         res.json({err:error.message});
+    } 
+})
+
+signupRoute.get("/alluser",async (req,res)=>{
+    try {
+        let userData= await Signupmodel.find()
+        res.send(userData)
+        
+    } catch (error) {
+        console.log("Error while fetching user Data")
     }
-    
 })
 
 module.exports={
