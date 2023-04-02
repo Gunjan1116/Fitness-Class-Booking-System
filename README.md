@@ -82,6 +82,16 @@
      
 ![login](https://user-images.githubusercontent.com/112810259/229368605-06c4318c-afbb-493e-8fa8-d2ea089f5b9f.png)
 
+## Home Page
+ - Header
+ - Footer
+ ## About Page
+ - Information of variety of trainning
+ - About us
+ - Trainers Information
+ - Customer Reviews
+ 
+
     
 
 
