@@ -1,5 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
-
+/* 
 * {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -201,6 +200,27 @@ body {
 .credit span {
     color: #9CD02F;
 } */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+.mid-image{
+    display: grid;
+   margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    margin-top: 5%;
+
+    
+}
+
+
+.head-about{
+    color:greenyellow;
+    font-size: 40px;
+
+}
+.para-about{
+    margin-top:8% ;
+}
 
 .mid-image-about {
     width: 40%;
