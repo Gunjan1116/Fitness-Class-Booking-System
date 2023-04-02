@@ -40,7 +40,7 @@ body {
 
 .heading {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
     position: relative;
 }
 
@@ -113,11 +113,75 @@ body {
 
 .header a {
     display: inline-block;
-    padding: 1.5rem 45rem;
+    padding: 1.5rem 50rem;
     font-size: 1.7rem;
     color: #fff;
 }
 
+.trainers {
+    margin-top: 10rem;
+    padding: 0 2rem;
+}
+
+.trainers .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    gap: 1.5rem;
+}
+
+.trainers .box-container .box {
+    height: 40rem;
+    position: relative;
+    margin-bottom: 7rem;
+
+}
+
+.trainers .box-container .box img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.trainers .box-container .box .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    padding: 2rem;
+    -webkit-transform: translateY(6.5rem);
+    transform: translateY(6.5rem);
+}
+
+.trainers .box-container .box .content span {
+    font-size: 1.5rem;
+    color: #9CD02F;
+}
+
+.trainers .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding-top: .5rem;
+}
+
+.trainers .box-container .box .content .share {
+    padding-top: 2rem;
+    margin-top: 1.5rem;
+    border-top: 0.1rem solid #aaa;
+}
+
+.trainers .box-container .box .content .share a {
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 1.5rem;
+}
+
+.trainers .box-container .box .content .share a:hover {
+    color: #9CD02F;
+}
 
 .footer {
     margin-top: 10rem;
