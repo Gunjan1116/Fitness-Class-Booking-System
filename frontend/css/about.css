@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
 
 * {
     font-family: 'Nunito', sans-serif;
@@ -200,4 +200,187 @@ body {
 
 .credit span {
     color: #9CD02F;
+} */
+
+.mid-image-about {
+    width: 40%;
+    display: flex;
 }
+
+/* 2nd mid-section */
+.second-mid-head {
+    text-align: center;
+
+    color: greenyellow;
+    font-size: 60px;
+}
+
+.second-mid-images {
+    display: grid;
+    width: 80%;
+    margin: 10px auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    /* border: 1px solid white; */
+
+
+}
+
+.second-mid-img-section {
+    width: 100%;
+
+}
+
+.second-mid-img-section img {
+    width: 50%;
+}
+
+h3 {
+    color: greenyellow;
+    font-size: 35px;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    /* font-style: italic; */
+}
+
+#about-us {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+
+
+}
+
+/* about us */
+.about-image {
+    width: 60%;
+    margin: 3% auto auto 5%;
+}
+
+.our-team-image {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 0;
+}
+
+.our-team-image img {
+    width: 90%;
+}
+
+.book-appointment-button {
+    margin: 2%;
+    text-align: center;
+}
+
+.appointment {
+    background-color: olivedrab;
+    padding: 15px;
+    border-radius: 15%;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.appointment:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* project */
+
+#projects {
+    color: black;
+    /* background: #ffffff; */
+    margin-top: 3%;
+}
+
+.teams h5 {
+    font-weight: 700;
+    color: #07080B;
+
+    transform: translateY(-65px);
+}
+
+.teams h1 {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    transform: translateY(23px);
+    /* opacity: 0.1; */
+    /* padding-top: -20px; */
+    margin-bottom: 6%;
+    margin-top: -6%;
+}
+
+.teams .carousel .project-card {
+    background: olivedrab;
+    border-radius: 5px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .project-card:hover {
+    background: rgba(0, 0, 0, 0.149);
+}
+
+.teams .carousel .project-card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .project-card:hover .box {
+    transform: scale(1.05);
+}
+
+.teams .carousel .project-card #text {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.teams .carousel .project-card img {
+    height: 150px;
+    width: 250px;
+    object-fit: cover;
+    /* border-radius: 10%; */
+    border: 5px solid black;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .project-card:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    background: #07080B !important;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #07080B;
+    transition: all 0.3s ease;
+}
+
+
+
