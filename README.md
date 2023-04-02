@@ -54,7 +54,23 @@
     ## Database
     >MONGODB
 
-    <br>
+    ## Register
+
+    - "localhost:8080/signup"
+
+    * User 
+    - Name 
+    - Email
+    - Password
+
+    ## Login
+
+     - "localhost:8080/login"
+
+     - Email
+     - Password
+
+     
 
     
 
