@@ -1,4 +1,4 @@
-let url="http://localhost:3000"
+let url="https://good-tan-jay.cyclic.app/"
 
 let boxContainer=document.querySelector("#trainers .box-container")
 

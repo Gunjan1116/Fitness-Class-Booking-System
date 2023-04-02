@@ -1,4 +1,4 @@
-let baseUrl=`http://localhost:3000`
+let baseUrl=`https://good-tan-jay.cyclic.app/`
 let btnBook=document.getElementById("book_appointment");
 btnBook.addEventListener("click",()=>{
     let date=document.getElementById("inputdate").value;
