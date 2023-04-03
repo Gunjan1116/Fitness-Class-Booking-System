@@ -111,6 +111,25 @@
  - HOME GYM
  - ACCESSORIES
 
+
+  ## Schema
+    ## User
+    - name  : String
+    - email : String
+    - password : String
+    ## Trainer
+    - name : String
+    - age : String
+    - gender : String
+    - image : String
+    - price : Number
+    - specialization: Array of String
+    ## Booking
+    - userId : String
+    - trainerId : String
+    - userEmail : String
+    - bookingDate : String
+    - bookingSlot : String
  
 
     
