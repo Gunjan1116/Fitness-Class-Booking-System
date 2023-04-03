@@ -3,7 +3,8 @@
 
 >> ![rapid-fit](https://user-images.githubusercontent.com/112810259/229367310-98d1ee3e-8392-46db-83c7-c5ff2b182d78.png)
 
-![UrlShortner drawio (1)](https://user-images.githubusercontent.com/112810259/229415457-b3ade0de-7ffe-4669-85e3-e6ed3f3105d1.png)
+
+![fit-sd](https://user-images.githubusercontent.com/112810259/229415886-e2d334f1-1932-4683-bbf6-7c5b13e63dac.png)
 
 
 <br>
