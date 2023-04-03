@@ -4,7 +4,7 @@
  ![rapid-fit](https://user-images.githubusercontent.com/112810259/229367310-98d1ee3e-8392-46db-83c7-c5ff2b182d78.png)
 
 
-![fit-sd](https://user-images.githubusercontent.com/112810259/229415886-e2d334f1-1932-4683-bbf6-7c5b13e63dac.png)
+![fit-sd1](https://user-images.githubusercontent.com/112810259/229416316-de2db3b0-c339-49bf-b970-3fdea7292772.png)
 
 
 <br>
