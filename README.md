@@ -156,7 +156,24 @@
 
  - Get the booking of paticular user
   - https://good-tan-jay.cyclic.app/booking/userId
+
+ ## Trainer end points
+  - Get all trainer
+   - https://good-tan-jay.cyclic.app/trainer
   
+  - Add new trainer
+   - https://good-tan-jay.cyclic.app/trainer/add
+
+      - name 
+      - age 
+      - gender 
+      - image 
+      - price 
+      - specialization
+      
+  - Get a paticular trainer by trainerId
+    - https://good-tan-jay.cyclic.app/trainer/id
+
     
 
     
