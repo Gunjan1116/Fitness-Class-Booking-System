@@ -57,13 +57,18 @@
    # Backend
     >NODEJS
     >EXPRESSJS
+    >MONGOOSE
+    >NODEMAILER
+    >JSONWEBTOKEN
+    >BCRYPT
+    >CORS
     
    # Database
     >MONGODB
 
    ## Register
 
-    - "localhost:8080/signup"
+    - "localhost:8080/user/signup"
 
     * User 
     - Name 
@@ -72,7 +77,7 @@
 
    ## Login
 
-     - "localhost:8080/login"
+     - "localhost:8080/user/login"
 
      - Email
      - Password
