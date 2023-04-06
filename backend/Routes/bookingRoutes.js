@@ -6,6 +6,7 @@ const { authenticate } = require("../middlewares/authenticateMiddleware")
 
 const bookingRoutes = express.Router();
 const nodemailer = require("nodemailer")
+require("dotenv").config()
 
 bookingRoutes.get("/", async (req, res) => {//getting all booking data
     try {
@@ -62,7 +63,7 @@ bookingRoutes.post("/create", authenticate, async (req, res) => {//create new bo
             service: 'gmail',
             auth: {
                 user: 'ajitkhatua286@gmail.com',
-                pass: 'ezfgqbrkxpmcjkqr'
+                pass: process.env.emailPassword
             }
         });
         const mailOptions = {
