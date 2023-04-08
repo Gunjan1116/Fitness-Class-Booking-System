@@ -24,8 +24,8 @@
 <br>
 
 # DEPLOYED LINK
- - [Frontend] (https://chipper-zabaione-4ba9e5.netlify.app/)
- - [Backend] (https://good-tan-jay.cyclic.app/)
+ - [Frontend](https://chipper-zabaione-4ba9e5.netlify.app/)
+ - [Backend](https://good-tan-jay.cyclic.app/)
 
 <hr>
 
