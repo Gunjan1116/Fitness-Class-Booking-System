@@ -1,115 +1,188 @@
 ## Project
-> tangy-gese-4843
+>> Earsplitting-growth-3609
 
-## Project name
-> Chit--chat-application
-
-
-# Chit Chat App
-- Collaborative Project
-   - Contributors
-   1.Ayushi Soni(Team Lead)
-   2.Dilip Sanap
-   3.Pavan Ingalagi
-   4.Manthan Pelne
-   5.Aniket Babariaya
+ ![rapid-fit](https://user-images.githubusercontent.com/112810259/229367310-98d1ee3e-8392-46db-83c7-c5ff2b182d78.png)
 
 
-## Objective
-  -  Chat Chat is messaging app can support one-on-one and group chat functionality
+
+![33FC57DB-36A7-47B5-A20B-F86C7ABB7EDB](https://user-images.githubusercontent.com/112810259/229417706-587e96d1-4f1f-4715-a722-35566ec9b719.jpg)
+
+
+<br>
+
+## Project Name
+>> Rapit-Fit
+
+# Collaborative Project
+ >>Contributors
+  - Gunjan Kumar (Team lead)
+  - Ajit Singh
+  - Ayushi Soni
+  - Vishal Singh
    
+
+<br>
+
+# DEPLOYED LINK
+ - [Frontend](https://chipper-zabaione-4ba9e5.netlify.app/)
+ - [Backend](https://good-tan-jay.cyclic.app/)
+
+<hr>
+
    
-   
-   ![chit-chat-app](https://user-images.githubusercontent.com/112810259/230863588-6a8be60f-62e8-43f9-a187-d94c7faa5180.png)
+   ![WhatsApp Image 2023-04-02 at 10 40 36 PM](https://user-images.githubusercontent.com/112810259/229368310-4371aa39-b0dc-4d7c-8542-65b780611528.jpeg)
+
+   <br>
+ # BluePrint and Tasks
+ 
 
 
-# Tech Stack
-
- * FRONTEND
-- HTML
-- CSS
-- JavaScript
-
- * Backend
-- Node.js
-- Express
-- MongoDb Atlas
-- Mongoose
-- Moment
-- Socket.io
+ # REQUIREMENTS 
+  - User can login and sign up 
+  - User can visit severals sections
+  - User can able to get all the information
+  - User can book trainers
+  - User can book other services
+  - User can book the appointment slot 
+  - User can pay for the services
+  - User can give feedback on appointment
+  - User can choose time according to their needs for slot booking
+  - User can cancel the appointment
+  - Feedback
 
 
+  ## TECH STACKS
+   # Frontend
+    >HTML
+    >CSS
+    >JAVASCRIPT
+    >BOOTSTRAP
+    >SWIPERJS
+    >CAROUSEL
+    >JQUERY
 
-# Deployed link
-https://storied-sprite-9ada24.netlify.app/
+   # Backend
+    >NODEJS
+    >EXPRESSJS
+    >MONGOOSE
+    >NODEMAILER
+    >JSONWEBTOKEN
+    >BCRYPT
+    >CORS
+    
+   # Database
+    >MONGODB
 
-API endpoints
-<!-- To start the server "npm start "-->
-NO need to give token . Taken care by redis.cliet.Get
-***
-# register
-localhost:8080/register
--name
--email
--pass
--pic link
-# login
-localhost:8080/login
--email
--pass
+   ## Register
 
-1.***To Get All Users data
-localhost:8080/user/
+    - "https://good-tan-jay.cyclic.app//user/signup"
 
-2.***To get data user by search
+    * User 
+    - Name 
+    - Email
+    - Password
 
-localhost:8080/user?search={name/email}
+   ## Login
 
-# Message Section (Individual)
-<!-- Message Route -->
+     - "https://good-tan-jay.cyclic.app//user/login"
 
-<!-- 1.Sending a Message Route -->
-localhost:8080/message/
--POST request
-
-
-<!-- 2.To get all chat in that room -->
--GET request
-
-localhost:8080/message/:chatId
+     - Email
+     - Password
+     
+     
+     
+     
 
 
-# Group Chat
-<!--Access The Chat  -->
+     
+![login](https://user-images.githubusercontent.com/112810259/229368605-06c4318c-afbb-493e-8fa8-d2ea089f5b9f.png)
 
-1.get All chat
-localhost:8080/chat
--post
+## Home Page
+ - Navbar -> Home | About | Features | Pricing | Trainers | Register Now
+ - Header
+ - Footer
 
-2.get all chat
-localhost:8080/chat
--GET
 
-<!-- 3.Create A group Chat -->
-localhost:8080/chat/group
-<!-- Need to provide -->
--name of Group
--add members
+ ## About Page
+ - Information of variety of trainning
+ - About us
+ - Trainers Information
+ - Customer Reviews
 
-<!-- 4.Rename The Group -->
-localhost:8080/chat/renameGroup
-<!-- Need to provide -->
--chatId i.e. group ID
-- new Name
+## Features
+ - SHOULDER TRAINING MACHINES
+ - CHEST AND ARMS TRAINING MACHINES
+ - SHOULDER TRAINING MACHINES
+ - BACK TRAINING MACHINES
+ - CORE TRAINING MACHINES
+ - LEG TRAINING FITNESS MACHINES
+ - FREE WEIGHTS
+ - CARDIO MACHINES
+ - HOME GYM
+ - ACCESSORIES
 
-<!-- 5.remove Member from Group -->
-localhost:8080/chat/removeFromGroup
-<!-- Need to provide -->
--chatId of group
--userId of member
 
-<!-- 6.add Member from Group -->
-localhost:8080/chat/addToGroup
-<!-- Need to provide -->
--chatId
--_id of member
+
+  ## Schema
+    ## User
+    - name  : String
+    - email : String
+    - password : String
+    ## Trainer
+    - name : String
+    - age : String
+    - gender : String
+    - image : String
+    - price : Number
+    - specialization: Array of String
+    ## Booking
+    - userId : String
+    - trainerId : String
+    - userEmail : String
+    - bookingDate : String
+    - bookingSlot : String
+ 
+ ## Booking end points
+ - Adding new booking
+  - https://good-tan-jay.cyclic.app/booking/create
+
+    - trainerId
+    - bookingDate
+    - bookingSlot
+
+ - Cancelling the booking
+  - https://good-tan-jay.cyclic.app/booking/remove/id
+
+ - Get all booking
+  - https://good-tan-jay.cyclic.app/booking
+
+ - Get the booking of paticular user
+  - https://good-tan-jay.cyclic.app/booking/userId
+
+ ## Trainer end points
+  - Get all trainer
+   - https://good-tan-jay.cyclic.app/trainer
+  
+  - Add new trainer
+   - https://good-tan-jay.cyclic.app/trainer/add
+
+      - name 
+      - age 
+      - gender 
+      - image 
+      - price 
+      - specialization
+      
+  - Get a paticular trainer by trainerId
+    - https://good-tan-jay.cyclic.app/trainer/id
+
+    
+
+    
+
+
+
+
+    
+
+
