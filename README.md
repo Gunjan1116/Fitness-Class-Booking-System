@@ -16,7 +16,7 @@
 # Collaborative Project
  >>Contributors
   - Gunjan Kumar (Team lead)
-  - Ajit Singh
+  - Ajit Kumar Khatua
   - Ayushi Soni
   - Vishal Singh
    
